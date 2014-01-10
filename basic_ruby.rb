@@ -84,5 +84,14 @@ x = 3
 "Hello World".split(" ").map {|x| x.length}.join(" ")
 # => "5 5"
 
+# Another option:
+count = 0
+"Hello World".split("­ ").ma­p{|x| count­ += x.len­gth}
+count
+# => 10
+
+# Last option
+"Hello World".length # whitespace is also a character
+# => 11
 
 
